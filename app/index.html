@@ -36,15 +36,15 @@
             <a class="navbar-brand" href="#/">angularGoogleMapsPractice</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+          <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavCtrl">
 
             <ul class="nav navbar-nav">
-              <li><a href="#/">Basic</a></li>
-              <li><a ng-href="#/marker">Marker</a></li>
-              <li><a ng-href="#/markers">Markers</a></li>
-              <li><a ng-href="#/circle">Circle</a></li>
-              <li><a ng-href="#/geocoding">Geocoding</a></li>
-              <li><a ng-href="#/reversegeocoding">Reverce Geocoding</a></li>
+              <li ng-class="{ active: isActive('/')}"><a href="#/">Basic</a></li>
+              <li ng-class="{ active: isActive('/marker')}"><a ng-href="#/marker">Marker</a></li>
+              <li ng-class="{ active: isActive('/markers')}"><a ng-href="#/markers">Markers</a></li>
+              <li ng-class="{ active: isActive('/circle')}"><a ng-href="#/circle">Circle</a></li>
+              <li ng-class="{ active: isActive('/geocoding')}"><a ng-href="#/geocoding">Geocoding</a></li>
+              <li ng-class="{ active: isActive('/reversegeocoding')}"><a ng-href="#/reversegeocoding">Reverce Geocoding</a></li>
             </ul>
           </div>
         </div>
@@ -98,6 +98,7 @@
         <script src="scripts/controllers/circle.js"></script>
         <script src="scripts/controllers/geocoding.js"></script>
         <script src="scripts/controllers/reversegeocoding.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
         <!-- endbuild -->
 </body>
 </html>
