@@ -51,6 +51,11 @@ angular
         controller: 'ReversegeocodingCtrl',
         controllerAs: 'reversegeocoding'
       })
+      .when('/editablecircle', {
+        templateUrl: 'views/editablecircle.html',
+        controller: 'EditablecircleCtrl',
+        controllerAs: 'editablecircle'
+      })
       .otherwise({
         redirectTo: '/'
       });
