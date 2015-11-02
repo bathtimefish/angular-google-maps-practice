@@ -56,6 +56,11 @@ angular
         controller: 'EditablecircleCtrl',
         controllerAs: 'editablecircle'
       })
+      .when('/uicontrols', {
+        templateUrl: 'views/uicontrols.html',
+        controller: 'UicontrolsCtrl',
+        controllerAs: 'uicontrols'
+      })
       .otherwise({
         redirectTo: '/'
       });
