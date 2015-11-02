@@ -14,8 +14,8 @@ angular.module('angularGoogleMapsPracticeApp')
       "center": position,
       "zoom": 14,
       "options": {
-        "streetViewControl": false,
-        "mapTypeControl": false,
+        "streetViewControl": false,   // ストリートビューアイコン(ペグマン) を非表示にする
+        "mapTypeControl": false,      // 地図切り替えボタンを非表示にする
       }
     };
 
